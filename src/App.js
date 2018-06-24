@@ -6,13 +6,13 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      list: []
+      list: [{ task: "organize garage" }, { task: "bake cookies" }]
     };
   }
   render() {
     return (
       <div className="App">
-        <List list={this.state.list} />{" "}
+        <List list={this.state.list} />
       </div>
     );
   }
